@@ -1,0 +1,282 @@
+body{
+    margin: 0px;
+    min-height: 700px;
+}
+
+#conteneurEntete{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgb(57, 57, 57);
+}
+
+#logo{
+    max-width: 300px;
+}
+
+#champsRecherche{
+    display: flex;
+    flex-direction: row;
+    color:rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    gap: 20px;
+}
+
+#zoneRecherche{
+    display: flex;
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 20px;
+    border: 0px;
+}
+#formAjoutButton {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: rgb(70, 69, 69);
+    color:white;
+    font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px 25px 0px 0px;
+    border: 0px;
+  }
+
+  #formAjoutButton:hover {
+    background-color: rgb(210, 105, 30);
+  }
+
+  #ajoutButton{
+    background-color: rgb(57, 57, 57);
+    color:white;
+    font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 350px;
+    height: 75px;
+    border-radius: 25px 25px 0px 0px; 
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+  }
+
+  #ajoutButton:hover {
+    background-color: rgb(210, 105, 30);
+  }
+
+  #miniFormOverlay {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+#miniForm {
+    position:absolute;
+    left: 25px;
+    top: 25px;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+#cancel{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#formulaireAjout{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h2{
+    font-size:larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .pDescription{
+    margin-top: 0px;
+  }
+
+  .pAuteur{
+    margin-top: -15px;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #252222;
+    color: hsl(0, 0%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+  }
+
+  #posts-container,
+  #coffees-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  #posts-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+
+  .sousMenu{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    min-height: 50px;
+    background-color: rgb(222, 220, 218);
+    color: white;
+  }
+
+  #buttonCoffee{
+    height: 50px;
+    width: 300px;
+    background-color: rgb(210, 105, 30);
+    color: white;
+    border: 0px;
+  }
+
+  #buttonCoffee:hover{
+    background-color: rgb(9, 168, 216);
+  }
+
+  #coffees-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  #user-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: rgb(252, 252, 252);
+    padding: 50px;
+  }
+
+  .post{
+    min-width: 700px;
+    background-color: rgb(246, 246, 246);
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+    border-radius: 25px;
+
+  }
+
+  .post-image{
+    width: 400px;
+    height: 400px;
+    margin: 25px;
+  }
+  
+  .post-contenu{
+    max-width: 500px;
+    margin: 25px;
+  }
+
+  .post-description{
+    padding-bottom: 20px;
+  }
+
+  .comment-box{
+    width: 400px;
+    height: 100px;
+    overflow: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 900px) {
+    .post{
+      width: 100%;
+      flex-direction: column;
+      align-items:center;
+    }
+    .user-name{
+      width: 80%;
+    }
+    .post-contenu{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .post{
+      width: 100%;
+    }
+    .post-contenu{
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .post{
+      width: 100%;
+    }
+    .post-image{
+      width: 300px;
+      height: 300px;
+      margin: 25px;
+    }
+    .post-contenu{
+      width: 90%;
+    }
+    .post-description{
+      width: 70%;
+    }
+    .comment-box{
+      width: 300px;
+    }
+    footer {
+      font-size: 10px;
+    }
+    #formAjoutButton {
+      right: 40%;
+    }
+  }
+

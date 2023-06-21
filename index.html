@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script async src="fichiers_index\js\globals.js"></script>
+  <script async src="fichiers_index\js\main.js"></script>
+  <script async src="fichiers_index\js\post-class.js"></script>
+  <link rel="stylesheet" href="fichiers_index\css\style.css">
+</head>
+
+<body>
+
+  <div id="conteneurEntete">
+    <div id="entete">
+      <img id="logo" src="fichiers_index\images\instLogo.png" alt="">
+    </div>
+        <div id="champsRecherche">
+          <p>RECHERCHE</p>
+          <input id="zoneRecherche" type="text">
+        </div>
+  </div>
+
+  <div class="sousMenu">
+    <a href="coffee.html"><button id="buttonCoffee">PRÉSENTATION DES CAFÉES</button></a>
+  </div>
+
+<div id="posts-container">
+
+</div>
+
+
+  <button id="formAjoutButton">Ajoutez une publication</button>
+
+  <div id="miniFormOverlay">
+    <div id="miniForm">
+      <div id="cancel">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+      </div>
+      <h2>Ajouter un post</h2>
+      
+      <form id="formulaireAjout">
+          
+          <label for="post-picture">Votre image</label>
+          <input type="url" id="post-picture" name="post-picture">
+          <label for="post-name">Votre Nom</label>
+          <select id="post-name" name="post-name"></select>
+          <label for="post-picture">Decription</label>
+          <textarea id="post-description" name="post-description" cols="30" rows="10" style="margin-bottom: 25px;"></textarea>
+      </form>
+      <button id="ajoutButton">Ajoutez</button>
+    </div>
+    
+  </div>
+
+      <footer>
+       <p>Un travail fait par François Gauthier & Benoit Marceau</p>
+      </footer>
+
+</body>
+
+</html>
